@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="myBack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="600.0" prefHeight="424.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <AnchorPane prefHeight="422.0" prefWidth="600.0">
+            <children>
+                <MenuBar fx:id="loadFile" layoutY="2.0">
+                    <menus>
+                        <Menu fx:id="menu" mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem fx:id="menuItem" mnemonicParsing="false" text="Jar file" />
+                            </items>
+                        </Menu>
+                        <Menu fx:id="helpButton" mnemonicParsing="false" text="Info">
+                            <items>
+                                <MenuItem fx:id="aboutAuthor" mnemonicParsing="false" text="Autor" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ListView fx:id="listView" layoutY="27.0" prefHeight="262.0" prefWidth="316.0" />
+                <TextField fx:id="firstArgText" layoutX="372.0" layoutY="92.0" prefHeight="25.0" prefWidth="89.0" />
+                <TextField fx:id="ResultText" layoutX="372.0" layoutY="188.0" />
+                <Button fx:id="runButton" layoutX="539.0" layoutY="133.0" mnemonicParsing="false" text="RUN" />
+                <Label layoutX="14.0" layoutY="342.0" text="Description" />
+                <TextArea fx:id="descriptionText" layoutX="8.0" layoutY="359.0" prefHeight="52.0" prefWidth="308.0" />
+                <TextField fx:id="secArgText" layoutX="495.0" layoutY="92.0" prefHeight="25.0" prefWidth="89.0" />
+                <Label layoutX="373.0" layoutY="65.0" text="1 arg." />
+                <Label layoutX="495.0" layoutY="65.0" text="2 arg." />
+                <Label layoutX="371.0" layoutY="158.0" text="Wynik" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
